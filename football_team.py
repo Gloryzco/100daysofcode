@@ -1,28 +1,29 @@
 #this program pick up the top two clubs in a 
 #group of five to qualify for the round of 16
 
-#points are awarded to each clubs from games played
-
-clubs = {
-	'Chelsea': 5,
-	'Arsenal': 7,
-	'ManCity': 5,
-	'Fullham': 3,
-	'Burnley': 6,
+group_A = {
+	'Team1':{'Name': 'Chelsea', 'point': 2},
+	'Team2':{'Name': 'Arsenal', 'point': 6},
+	'Team3':{'Name': 'ManCity', 'point': 3},
+	'Team4':{'Name': 'Burnley', 'point': 4},
+	'Team5':{'Name': 'Everton', 'point': 3},
 	}
-for c, p in clubs.items():
-	print(c + "\t|\t" + str(p))
-print("\n=====================\n")
-
-#arranging them in order of decreasing points
-
-winner = (sorted(clubs, key=clubs.__getitem__,reverse=True))
-print(winner)
-
-
 	
-	
-		
+print("\t\tName\t\tPoint")
+for team, team_info in group_A.items():
+	print(team + "\t->\t" + team_info['Name'] + "\t|\t" + str(team_info['point']))
+print("\n=========================\n")
+
+#Arranging them in order of decreasing points
+print("Arranging them in order of decreasing points\n")
+sorted_point = sorted(group_A, reverse=True, key=lambda x: (group_A[x]['point']))		
+print (sorted_point)
+print("\n================================================")
+
+#Outputting the two that qualifies based on points
+print("\n\nOutputting the two that qualifies based on points\n")
+print(sorted_point[:2])
+
 	
 		
 
