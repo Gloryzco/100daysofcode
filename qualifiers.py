@@ -12,7 +12,7 @@ group_A = {
 print("\t\tName\t\tPoint")
 for team, team_info in group_A.items():
 	print(team + "\t->\t" + team_info['Name'] + "\t|\t" + str(team_info['point']))
-print("\n=========================\n")
+print("\n================================================\n")
 
 #Arranging them in order of decreasing points
 print("Arranging them in order of decreasing points\n")
