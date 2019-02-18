@@ -17,9 +17,7 @@ class User():
 	def describe_user(self):
 		"""briefly describing the user"""
 		print("FULLNAME: " + self.fullname())
-		print("AGE: " + str(self.age))
-		
-		
+		print("AGE: " + str(self.age))		
 		
 	def login_user(self):		
 		print("\nSUPPLY YOUR CREDENTIALS")
@@ -50,8 +48,7 @@ class Admin(User):
 		"""this aspect shows the privileges of the administrator"""
 		print("\nThe  admin's privileges are listed below:")
 		for i in range(len(self.privileges)):
-			print (str(i+1) + ".  " + self.privileges[i])
-	
+			print (str(i+1) + ".  " + self.privileges[i])	
 	
 ch =input("\tLOGIN\n 	\n1.  Admin. \t2.  User\n")
 if ch == '1':
