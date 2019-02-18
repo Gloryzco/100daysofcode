@@ -65,9 +65,9 @@ if ch == '1':
 
 elif ch == '2':
     system('cls')
-    txt = ("Before you can have access to our platform, kindly register yourself")
+    txt = ("B4 u can have access to our platform, kindly register yourself")
     print(txt.upper())
-    print("-----------------------------------------------------------------------\n")
+    print("-----------------------------------------------------------\n")
     fname = input("FIRSTNAME: ")
     lname = input("LASTNAME: ")
     sex = input("M/F: ")
