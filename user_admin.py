@@ -60,12 +60,12 @@ if ch == '1':
 	pw = input("enter your password: ")
 	print("\nverifying...")
 	sleep(1.5)
+	system('cls')
 	if pw == "gloryzco":
-		system('cls')
 		print("Glory, welcome to the admin dashboard\n")
 		admin1.show_privileges()
 	else:
-		print("Password incorrect!")
+		print("\n\nPassword incorrect!")
 		
 elif ch == '2':
 	system('cls')
